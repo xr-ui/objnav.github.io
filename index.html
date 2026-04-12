@@ -286,7 +286,7 @@
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/xr-ui/objnav" target="_blank"
+                    <a href="https://github.com/xr-ui/CRGNav" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -314,23 +314,7 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -341,7 +325,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Zero-shot object-goal navigation requires an agent to explore unknown environments and navigate to a target object, which remains a major challenge in embodied intelligence. Although foundation-model-based zero-shot object navigation methods alleviate the high training cost and poor generalization of traditional training-based approaches, existing methods still suffer from unreliable long-range perception, hallucination-induced decision bias, and inaccurate stopping decisions. To address this issues, we propose CRG-Nav, a modular zero-shot object navigation framework that decouples perception from decision-making for more reliable navigation. Specifically, CRG-Nav combines a vision-language model(VLM) with YOLO-World for open-vocabulary perception and employs a large language model(LLM) to evaluate candidate directions under a unified scoring criterion. In addition, we introduce a Gaussian-decay-based confidence mechanism to downweight unreliable long-distance observations, thereby constructing a more robust global exploration preference map. For more accurate stopping, CRG-Nav adopts a dual semantic-geometric verification mechanism to estimate the distance between the agent and the target object and determine whether termination is appropriate, effectively reducing false stops and premature stopping. We evaluate CRG-Nav on the HM3Dv1, HM3Dv2, and MP3D datasets. Compared with other state-of-the-art methods, CRG-Nav achieves excellent performance with only a small number of parameters and without task-specific training. Furthermore, real-world experiments demonstrate its effectiveness in physical environments.
           </p>
         </div>
       </div>
